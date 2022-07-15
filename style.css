@@ -1,0 +1,137 @@
+body{
+    background-color: #F0F2F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    padding: 20px 70px;
+    color: #000;
+    bottom: 0;
+}
+
+/* .header_stuff{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+} */
+
+.header_stuff{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    text-align: center;
+    /* border: 1px solid #000; */
+    /* background-color: #F0F2F2; */
+    color: #000;
+}
+
+.search_input{
+    padding: 7px;
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    background-color: #FFF;
+    color: #000;
+}
+
+.search_input:hover{
+    transform: scale(1.005);
+    transition: ease-in 100ms;
+    opacity: 0.98;
+}
+
+.place_container{
+    justify-self: end;
+    font-size: 25px;
+    justify-self: end;
+}
+
+.date_container{
+    font-weight: 200;
+    background-color: aqua;                          /*AQUA*/
+}
+
+.date_container .time{
+    font-size: 65px;
+    font-weight: 200;
+}
+
+.date_container .am_pm{
+    font-size: 25px;
+}
+
+.date_container .date{
+    font-size: 25px;
+}
+
+main{
+    position: relative;
+    padding: 20px 70px;
+}
+
+.current_info .other_info{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 15vw;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: rgba(24, 24, 27, 0.3);
+}
+
+.Value{
+    position: absolute;
+    right: 5px;
+}
+
+.current_info .other_info .weather_item{
+    position: relative;
+}
+
+.future_forecast{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.future_forecast .weather_forecast{
+    display: flex;
+}
+
+.future_forecast .weather_forecast .weather_forecast_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(24, 24, 27, 0.3);
+}
+
+.future_forecast .weather_forecast .weather_forecast_item .day{
+    padding: 5px 15px;
+    background: #F0F2F2;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future_forecast .weather_forecast .weather_forecast_item :last-child{
+    padding-top: 10px;
+}
+
+.future_forecast .weather_forecast .weather_forecast_item:hover{
+    transform: scale(1.05);
+    transition: ease-in 100ms;
+    background-color: #AEB9F2;
+    /* border-color: #AEB9F2; */
+}
